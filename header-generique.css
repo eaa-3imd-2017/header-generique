@@ -7,6 +7,24 @@ html {
   font-size: 1em;
   line-height: 1.4;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#nav-projets {
+  background-color: #777;
+  color: #fff;
+}
+
+#nav-projets  h1 {
+  margin-top: 0;
+  padding: 1em;
+  font-size: 1.2em;
 }
 
 #nav-projets ol {
@@ -27,9 +45,9 @@ html {
 
   http://cours-web.ch/css/
 
-  E + F : an F element immediately preceded by an E element
+  E + F : an F element immediately preceded by an E element.
   
-  E ~ F : an F element preceded by an E element
+  E ~ F : an F element preceded by an E element.
   
 */
 
@@ -37,6 +55,7 @@ html {
   position: absolute;
   cursor: pointer;
   border: 1px solid black;
+  background: white;
   top: 1em;
   right: 1em;
   padding:10px;
@@ -45,7 +64,6 @@ html {
   padding: 8px 10px;
   color: #aaa;
   line-height:20px;
-  font-size:12px;
   text-align:center;
 }
 
@@ -56,9 +74,7 @@ label:after {
 }
 
 #nav-check:checked + ol {
-  display: block;
   display: flex;
-  border: 1px solid red;
 /*  position: absolute;*/
   background: #fff;
 }
@@ -78,7 +94,6 @@ label:after {
   text-align: center;
   font-weight: bold;
   color: white;
-  border: 1px solid blue;
   background: blue;
   text-decoration: none;
   width: 100%;
