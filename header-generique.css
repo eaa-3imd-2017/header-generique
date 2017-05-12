@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Styles du Header Générique
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#nav-projets ol {
+  display: none;
+}
+
+#nav-check {
+  position: absolute;
+  appearance: none;
+  display: none;
+  cursor: pointer;
+  /*left:-100%;
+  top:-100%;*/
+}
+
+/*
+  Rappel sélecteurs CSS: 
+
+  http://cours-web.ch/css/
+
+  E + F : an F element immediately preceded by an E element
+  
+  E ~ F : an F element preceded by an E element
+  
+*/
+
+#nav-projets label {
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid black;
+  top: 1em;
+  right: 1em;
+  padding:10px;
+  width: 100px;
+  border-radius: 3px;
+  padding: 8px 10px;
+  color: #aaa;
+  line-height:20px;
+  font-size:12px;
+  text-align:center;
+}
+
+label:after {
+/*  content: "Open";
+  padding-left: 3em;
+  display: block;*/
+}
+
+#nav-check:checked + ol {
+  display: block;
+  display: flex;
+  border: 1px solid red;
+/*  position: absolute;*/
+  background: #fff;
+}
+
+#nav-projets ol {
+  flex-direction: column;
+  width: 100%;
+  left: 0px;
+  padding: 2em;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#nav-projets a {
+  display: flex;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border: 1px solid blue;
+  background: blue;
+  text-decoration: none;
+  width: 100%;
+  min-height: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 0.5em;
+/*  box-shadow: 0 0 3em 1em rgba(0,0,255,0.2) inset;
+*/}
+
+#nav-projets a:hover {
+  background-color: skyblue;
+}
+
