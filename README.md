@@ -27,4 +27,6 @@ Voici le code:
 
 ## Comment modifier le titre et le lien de votre projet
 
-Le contenu du menu est généré en JavaScript. Pour modifier le titre et le lien de votre projet, il faut renseigner ces données dans le fichier [header-generique.js](header-generique.js)
+Le contenu du menu est généré dynamiquement en JavaScript. 
+
+Pour modifier le titre et le lien de votre projet, il faut renseigner ces données dans le fichier [header-generique.js](header-generique.js), dans `var ProjetsMultiArray`.
