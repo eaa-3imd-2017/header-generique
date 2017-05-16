@@ -2,18 +2,9 @@
    Styles du Header Générique
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
 body {
-  padding: 0;
   margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #nav-projets {
@@ -25,11 +16,12 @@ body {
   margin-top: 0;
   padding: 1em;
   font-size: 1.2em;
+  width: calc(100% - 150px);
 }
 
-#nav-projets ol {
-  display: none;
-}
+/* 
+La checkbox invisible 
+*/
 
 #nav-check {
   position: absolute;
@@ -40,7 +32,36 @@ body {
   top:-100%;*/
 }
 
+/* Le menu hamburger */
+
+#nav-projets label {
+  position: absolute;
+  cursor: pointer;
+  border: 2px solid black;
+  background: white;
+  top: 1em;
+  right: 1em;
+  width: auto;
+  padding: 0.5em 1em ;
+  line-height: 20px;
+  color: #000;
+}
+
+/* 
+ Le menu déroulant
+*/
+
+#nav-projets ol {
+  display: none;
+  background: #fff;
+}
+
+#nav-check:checked + ol {
+  display: flex;
+}
+
 /*
+
   Rappel sélecteurs CSS: 
 
   http://cours-web.ch/css/
@@ -51,34 +72,6 @@ body {
   
 */
 
-#nav-projets label {
-  position: absolute;
-  cursor: pointer;
-  border: 1px solid black;
-  background: white;
-  top: 1em;
-  right: 1em;
-  padding:10px;
-  width: 100px;
-  border-radius: 3px;
-  padding: 8px 10px;
-  color: #aaa;
-  line-height:20px;
-  text-align:center;
-}
-
-label:after {
-/*  content: "Open";
-  padding-left: 3em;
-  display: block;*/
-}
-
-#nav-check:checked + ol {
-  display: flex;
-/*  position: absolute;*/
-  background: #fff;
-}
-
 #nav-projets ol {
   flex-direction: column;
   width: 100%;
@@ -88,24 +81,85 @@ label:after {
   list-style: none;
 }
 
+/* 
+ Position du menu
+*/
+
 #nav-projets a {
   display: flex;
   box-sizing: border-box;
   text-align: center;
-  font-weight: bold;
-  color: white;
-  background: blue;
-  text-decoration: none;
   width: 100%;
   min-height: 2em;
   justify-content: center;
   align-items: center;
   padding: 1em;
+}
+
+#nav-projets li {
   margin-bottom: 0.5em;
-/*  box-shadow: 0 0 3em 1em rgba(0,0,255,0.2) inset;
-*/}
+}
+
+/* 
+ Style du menu
+*/
+
+#nav-projets a {
+  font-weight: bold;
+  color: black;
+  background: #eee;
+  text-decoration: none;
+  border: 2px solid black;
+}
 
 #nav-projets a:hover {
-  background-color: skyblue;
+  background-color: #ccc;
 }
+
+/* 
+ MediaQueries
+*/
+
+@media only screen and (min-width: 30em) {
+
+    #nav-check:checked + ol {
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2.5vw;
+      justify-content: center;
+      margin-bottom: 3em;
+
+      font-size: 1em;
+
+    }
+
+    #nav-projets li {
+      margin: 0;
+    }
+
+    #nav-projets li a {
+      height: 100%;
+      min-height: 6em;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+
+    #nav-check:checked + ol {
+      grid-template-columns: 1fr 1fr 1fr;
+      font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+    #nav-check:checked + ol {
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 1.2em;
+    }
+
+}
+
 
