@@ -25,6 +25,6 @@ Voici le code:
 <script src='https://eaa-3imd-2017.github.io/header-generique/header-generique.js'></script>
 ```
 
-## Comment modifier le titre et le lien de votre projet
+## Comment modifier le titre et le lien de votre projet
 
 Le contenu du menu est généré en JavaScript. Pour modifier le titre et le lien de votre projet, il faut renseigner ces données dans le fichier [header-generique.js](header-generique.js)
