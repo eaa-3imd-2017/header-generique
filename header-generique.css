@@ -1,6 +1,11 @@
-/* ==========================================================================
-   Styles du Header Generique
-   ========================================================================== */
+/* 
+
+  header-generique.css
+  =========================
+
+  Les styles CSS du header generique.
+
+*/
 
 body {
   margin: 0;
@@ -20,7 +25,10 @@ body {
 }
 
 /* 
-La checkbox invisible 
+
+  La checkbox invisible 
+  =========================
+
 */
 
 #nav-check {
@@ -32,7 +40,12 @@ La checkbox invisible
   top:-100%;*/
 }
 
-/* Le menu hamburger */
+/* 
+
+  Le menu hamburger 
+  =========================
+
+*/
 
 #nav-projets label {
   position: absolute;
@@ -48,7 +61,10 @@ La checkbox invisible
 }
 
 /* 
- Le menu deroulant
+
+  Le menu deroulant
+  =========================
+
 */
 
 #nav-projets ol {
@@ -62,7 +78,8 @@ La checkbox invisible
 
 /*
 
-  Rappel selecteurs CSS: 
+  Rappel selecteurs CSS
+  ========================= 
 
   http://cours-web.ch/css/
 
@@ -82,7 +99,10 @@ La checkbox invisible
 }
 
 /* 
- Position du menu
+
+  Position du menu
+  =========================
+
 */
 
 #nav-projets a {
@@ -101,7 +121,10 @@ La checkbox invisible
 }
 
 /* 
- Style du menu
+
+  Style du menu
+  =========================
+
 */
 
 #nav-projets a {
@@ -116,8 +139,11 @@ La checkbox invisible
   background-color: #ccc;
 }
 
-/* 
- MediaQueries
+/*
+
+  MediaQueries
+  =========================
+
 */
 
 @media only screen and (min-width: 30em) {
@@ -145,6 +171,8 @@ La checkbox invisible
 }
 
 @media only screen and (min-width: 45em) {
+    
+    /* On passe a 3 colonnes */
 
     #nav-check:checked + ol {
       grid-template-columns: 1fr 1fr 1fr;
@@ -154,10 +182,11 @@ La checkbox invisible
 }
 
 @media only screen and (min-width: 60em) {
+    
+    /* On passe a 4 colonnes */
 
     #nav-check:checked + ol {
       grid-template-columns: repeat(4, 1fr);
-      font-size: 1.2em;
     }
 
 }
