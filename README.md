@@ -29,4 +29,4 @@ Voici le code:
 
 Le contenu du menu est généré dynamiquement en JavaScript. 
 
-Pour modifier le titre et le lien de votre projet, il faut renseigner ces données dans le fichier [header-generique.js](header-generique.js), dans `var ProjetsMultiArray`.
+Pour modifier le titre et le lien de votre projet, il faut renseigner ces données dans le fichier [header-generique.js](header-generique.js), dans `var ListeProjets`.

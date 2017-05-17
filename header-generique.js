@@ -7,7 +7,7 @@
 
 // on définit la liste des projets (dans un Array javascript) :
 
-var ProjetsMultiArray = [
+var ListeProjets = [
 
     [ 'Histoire du pays', 'lien-histoire' ],
     [ 'La géographie', 'lien-geographie' ],
@@ -33,24 +33,22 @@ window.onload = function() {
   // Le H1:
 
   var navProjH1 = document.createElement("h1");
-
-  navProjH1.innerHTML = "La communauté portugaise en Suisse";
-  navProj.appendChild(navProjH1);
+      navProjH1.innerHTML = "La communauté portugaise en Suisse";
+      navProj.appendChild(navProjH1);
 
   // Le label: <label for="nav-check">
   
   var navProjLabel = document.createElement("label");
-  navProjLabel.htmlFor = 'nav-check';
-  navProjLabel.innerHTML = "<span>menu</span>";
-  navProj.appendChild(navProjLabel);
+      navProjLabel.htmlFor = 'nav-check';
+      navProjLabel.innerHTML = "<span>menu</span>";
+      navProj.appendChild(navProjLabel);
 
   // Le input: <input type="checkbox" id="nav-check"/>
 
   var navProjInput = document.createElement("input");
-  navProjInput.setAttribute('type', 'checkbox');
-  navProjInput.id = 'nav-check';
-
-  navProj.appendChild(navProjInput);
+      navProjInput.setAttribute('type', 'checkbox');
+      navProjInput.id = 'nav-check';
+      navProj.appendChild(navProjInput);
 
   // Le menu:
 
@@ -58,11 +56,11 @@ window.onload = function() {
 
   var navProjMenu = '';
 
-  // on utilise une boucle pour affciher les données du Array ProjetsMultiArray
+  // on utilise une boucle pour afficher les données contenues dans ListeProjets
 
-  for (var i = 0; i < ProjetsMultiArray.length; i++) {
+  for (var i = 0; i < ListeProjets.length; i++) {
 
-    var Projet = ProjetsMultiArray[i];
+    var Projet = ListeProjets[i];
 
     // on produit ceci : <li><a href="#">Histoire du pays</a></li>
 
