@@ -23,9 +23,12 @@ var ListeProjets = [
 
 ];
 
-window.onload = function() {
+window.addEventListener("load", ProduceHeader, false);
+
+function ProduceHeader() {
 
   // on définit l'élément cible:
+  
   var navProj = document.getElementById("nav-projets");
 
   // on crée les contenus:
