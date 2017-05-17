@@ -15,10 +15,11 @@ body {
 #nav-projets {
   background-color: #777;
   color: #fff;
+  overflow: auto;
 }
 
 #nav-projets  h1 {
-  margin-top: 0;
+  margin: 0 0 1em 0;
   padding: 1em;
   font-size: 1.2em;
   width: calc(100% - 150px);
@@ -70,6 +71,7 @@ body {
 #nav-projets ol {
   display: none;
   background: #fff;
+  margin: 0;
 }
 
 #nav-check:checked + ol {
@@ -154,8 +156,6 @@ body {
       grid-template-columns: 1fr 1fr;
       grid-gap: 2.5vw;
       justify-content: center;
-      margin-bottom: 3em;
-
       font-size: 1em;
 
     }
