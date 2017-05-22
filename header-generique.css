@@ -186,4 +186,24 @@
 
 }
 
+@media only screen and (min-width: 90em) {
+    
+    /* On passe a 6 colonnes */
+
+    #nav-check:checked + ol {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+}
+
+@media only screen and (min-width: 120em) {
+    
+    /* On passe a 6 colonnes */
+
+    #nav-check:checked + ol {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+}
+
 
