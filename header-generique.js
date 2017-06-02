@@ -13,7 +13,7 @@ var ListeProjets = [
     [ 'La géographie', 'https://eaa-3imd-2017.github.io/2-geographie/' ],
     [ 'L’économie portugaise aujourd’hui', '#' ],
 
-    [ 'Histoire de l’immigration portugaise en Suisse', '#' ],
+    [ 'Histoire de l’immigration portugaise en Suisse', 'https://eaa-3imd-2017.github.io/4-immigration/' ],
     [ 'Données démographiques : population résidente et flux migratoires', '#' ],
     [ 'Répartition géographique de la population portugaise', '#' ],
 
