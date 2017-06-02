@@ -10,7 +10,7 @@
 var ListeProjets = [
 
     [ 'Histoire du pays', 'lien-histoire' ],
-    [ 'La géographie', 'lien-geographie' ],
+    [ 'La géographie', 'https://eaa-3imd-2017.github.io/2-geographie/' ],
     [ 'L’économie portugaise aujourd’hui', '#' ],
 
     [ 'Histoire de l’immigration portugaise en Suisse', '#' ],
@@ -20,6 +20,8 @@ var ListeProjets = [
     [ 'Intégration socio-économique de la population portugaise en Suisse', '#' ],
     [ 'Vie sociale et culturelle, structuration de la collectivité portugaise en Suisse', 'https://eaa-3imd-2017.github.io/8-vie-social/' ],
     [ 'Langue et maintien de la culture d’origine', 'https://eaa-3imd-2017.github.io/9-langue/' ]
+   
+    
 
 ];
 
